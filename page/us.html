@@ -16,35 +16,37 @@
 </head>
 <body>
     <!--Header-->
-    <header>
-        <!--Menu-->
-        <div class="nav-bar">
-            <!-- Logo -->
-            <div class="cont-logo">
-                <img class="logo" src="../assets/logo.jpg" alt="">
-            </div>
-            <!-- Menu -->
-            <nav>
-                <ul>
-                    <!-- Inicio -->
-                    <li>
-                        <a href="../index.html"> Inicio </a>
-                    </li>
-                    <!-- Productos -->
-                    <li>
-                        <a href="../page/productos.html"> Productos </a>
-                    </li>
-                    <!-- Nosotros -->
-                    <li>
-                        <a href="../page/us.html"> Nosotros </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-        <!--Menu-->
+        <!--Nav bar-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-burger">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo.jpg " alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Cangre Burgers
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="us.html">Nosotros</a>
+                      </li>
 
-    <section class="us-page">
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!--Nav bar-->
+
+    <section class="container-sm us-page">
         <div>
             <!--Formulario-->
             <h1 class="index-title">Queres sumarte a esta familia? Completa el siguiente formulario para sumarte y recibir los mejores descuentos!</h1>
