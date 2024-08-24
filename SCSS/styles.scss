@@ -65,6 +65,13 @@ button {
     .btn {
         transition: all 1s;
     }
+    .prdct-name {
+      @include texto-color($textos);
+      background-color: $naranja-quemado;
+    
+
+
+    }
 //   Iframes
     //   index video
     .vid {
@@ -131,3 +138,5 @@ button {
     @include fondo-color($marron-chocolate);
     color: $beige-claro;
   }
+  // animaciones
+    
