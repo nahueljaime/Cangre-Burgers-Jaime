@@ -1,0 +1,133 @@
+// Variables de colores
+$rojo-oscuro: #a62c2b;
+$naranja-quemado: #d35400;
+$amarillo-mostaza: #f39c12;
+$marron-chocolate: #6e2c00;
+$beige-claro: #f5cba7;
+$textos: #ffeed6;
+
+// Mixin fondo
+@mixin fondo-color($color) {
+  background-color: $color;
+}
+
+// Mixin texto
+@mixin texto-color($color) {
+  color: $color;
+}
+
+//estilos
+.principal {
+  @include fondo-color($beige-claro);
+  font-family: 'Roboto', sans-serif;
+  padding: 3rem;
+}
+
+.ppal-titles{
+  @include texto-color($textos);
+  background-color: $naranja-quemado;
+}
+
+button {
+  @include fondo-color($rojo-oscuro);
+  @include texto-color($beige-claro);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover {
+    @include fondo-color($naranja-quemado);
+  }
+}
+
+
+// Navbar
+.navbar-burger {
+    @include fondo-color($rojo-oscuro);
+    padding: 10px 20px;
+  
+    a {
+      @include texto-color($beige-claro);
+      text-decoration: none;
+      margin: 0 10px;
+  
+      &:hover {
+        @include texto-color($amarillo-mostaza);
+      }
+    }
+  }
+// index
+    .carousel-bg{
+        background-color: #ffeed6 ;
+        padding: 2rem;
+    }
+// carousel
+    .btn {
+        transition: all 1s;
+    }
+//   Iframes
+    //   index video
+    .vid {
+        width: 100%; 
+        height: 800px; 
+        position: relative; 
+    
+    }
+
+    .vid iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            padding: 2rem;
+        }
+
+    .ubi-map {
+        @include fondo-color($textos );
+        padding: 3rem;
+    }
+// productos
+    .prdct-img {
+        width: 70%;
+    }
+    .prdcts {
+        background-color: #ffeed6 ;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    }
+// nosotros
+
+    .us-form {
+        @include fondo-color($textos );
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+        label {
+            @include texto-color($marron-chocolate);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid $marron-chocolate;
+            border-radius: 3px;
+        }
+    }
+// textos
+    .descrp {
+        color: $marron-chocolate;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    }
+// footer
+.footer-burger {
+    @include fondo-color($marron-chocolate);
+    color: $beige-claro;
+  }
