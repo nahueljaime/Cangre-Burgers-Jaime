@@ -32,13 +32,19 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="productos.html">Productos</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="us.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="shopping-cart.html">Carrito</a>
                       </li>
                     </ul>
                   </div>
@@ -47,40 +53,40 @@
         </header>
         <!--Nav bar-->
 
-    <section class="container-fluid principal">
+    <main class="container-fluid principal">
+        <!--Formulario-->
         <div class="container">
-            <!--Formulario-->
             <h1 class="ppal-titles col-12">Sumate a nuestra familia! Completa el formulario para recibir los mejores descuentos!</h1>
-            <form class="us-form row">
-              <div class="col-lg-3 col-md-6">
-                <label class="row" for="nombre">Nombre:</label>
-                <input class="row form-inputs" type="text" id="nombre" name="nombre"><br><br>
+            <form class="us-form ">
+              <div class="col-lg-2 col-md-6 form-inputs">
+                <label class="d-inline" for="nombre">Nombre:</label>
+                <input class="d-inline" type="text" id="nombre" name="nombre"><br><br>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <label class="row" for="apellido">Apellido:</label>
-                <input class="row form-inputs" type="text" id="apellido" name="apellido"><br><br>
+              <div class="col-lg-2 col-md-6 form-inputs">
+                <label class="d-inline" for="apellido">Apellido:</label>
+                <input class="d-inline " type="text" id="apellido" name="apellido"><br><br>
               </div>
-              <div class="col-lg-3 col-md-6">
-                <label class="row" for="email">Correo electrónico:</label>
-                <input class="row form-inputs" type="email" id="email" name="email"><br><br>
+              <div class="col-lg-2 col-md-6 form-inputs">
+                <label class="d-inline" for="email">Correo electrónico:</label>
+                <input class="d-inline " type="email" id="email" name="email"><br><br>
               </div>
-              <div class="col-lg-3 col-md-6">
+              <div class="col-lg-2 col-md-6 form-inputs">
                 <label class="row" for="telefono">Teléfono:</label>
-                <input class="row form-inputs" type="tel" id="telefono" name="telefono"><br><br>
+                <input class="d-inline " type="tel" id="telefono" name="telefono"><br><br>
               </div>
-              <button class="col-lg-1" type="submit">Enviar</button>
-            </form>
-        <!--fin formulario-->
+              <div class="container">
+                <button class="col-md-6 col-lg-2 col-sm-6" type="submit">Enviar</button>
+              </div>
+            </form>           
         </div>
+        <!--fin formulario-->
 
         <!--mapa con ubicacion-->
-        <div class="container ubi-map">
-          <div class="row">
-              <h1 class="ppal-titles row">
-              Donde nos encontramos?
-              </h2>
-              <p class="col-lg-3 col-md-6 col-sm-12descrp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam molestias ad repellendus magnam voluptate sit, corporis voluptatibus asperiores rerum ipsa vero sequi nisi commodi dignissimos quasi quod aliquam minus. Totam?</p>
-              <iframe class="col-lg-9 col-md-6 col-sm-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.572878630633!2d-58.63286012909475!3d-34.58967255062418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb947716f5225%3A0xe6f75b009c1d44f7!2sMcDonald&#39;s!5e0!3m2!1ses-419!2sar!4v1719944406565!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        <div class="container">
+          <h1 class="ppal-titles"> Donde nos encontramos?</h1>
+          <div class="row ubi-map">
+              <p class=" ubi-descrp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam molestias ad repellendus magnam voluptate sit, corporis voluptatibus asperiores rerum ipsa vero sequi nisi commodi dignissimos quasi quod aliquam minus. Totam?</p>
+              <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.572878630633!2d-58.63286012909475!3d-34.58967255062418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb947716f5225%3A0xe6f75b009c1d44f7!2sMcDonald&#39;s!5e0!3m2!1ses-419!2sar!4v1719944406565!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
           </div>
         </div>
     <!--fin mapa con ubicacion-->

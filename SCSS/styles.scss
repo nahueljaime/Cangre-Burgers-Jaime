@@ -23,9 +23,14 @@ $textos: #ffeed6;
   padding: 3rem;
 }
 
+
 .ppal-titles{
   @include texto-color($textos);
   background-color: $naranja-quemado;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -59,7 +64,11 @@ button {
 // index
     .carousel-bg{
         background-color: #ffeed6 ;
+        margin: 1rem;
         padding: 2rem;
+        border-radius: 10px;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+      
     }
 // carousel
     .btn {
@@ -67,18 +76,15 @@ button {
     }
     .prdct-name {
       @include texto-color($textos);
-      background-color: $naranja-quemado;
-    
-
-
+      background-color: $naranja-quemado;  
     }
 //   Iframes
     //   index video
     .vid {
-        width: 100%; 
-        height: 800px; 
-        position: relative; 
-    
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%;
+      position: relative;
     }
 
     .vid iframe {
@@ -92,13 +98,22 @@ button {
 
     .ubi-map {
         @include fondo-color($textos );
-        padding: 3rem;
+
+
+        margin: 1rem;
+        background-color: #ffeed6 ;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+
     }
 // productos
     .prdct-img {
-        width: 70%;
+        width: 100%;
+        padding: 1rem;
     }
     .prdcts {
+        margin: 1rem;
         background-color: #ffeed6 ;
         padding: 2rem;
         border-radius: 10px;
@@ -108,6 +123,8 @@ button {
 
     .us-form {
         @include fondo-color($textos );
+        display: flex;
+        flex-wrap: wrap;
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -126,17 +143,41 @@ button {
             border-radius: 3px;
         }
     }
+    .form-inputs {
+      margin: 1rem;
+    }
 // textos
     .descrp {
-        color: $marron-chocolate;
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: $amarillo-mostaza;
+      color: $marron-chocolate;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .ubi-descrp {
+      display: flex;
+      background-color: $amarillo-mostaza;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+
     }
 // footer
 .footer-burger {
     @include fondo-color($marron-chocolate);
     color: $beige-claro;
   }
-  // animaciones
-    
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 10px;
+}
+.btn-buy {
+  background-color: $amarillo-mostaza;
+  border-color: none;
+  margin: 1rem;
+}
+.btn-buy:hover {
+  background-color: $naranja-quemado;
+}

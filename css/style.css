@@ -7,6 +7,10 @@
 .ppal-titles {
   color: #ffeed6;
   background-color: #d35400;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -35,16 +39,25 @@ button:hover {
 
 .carousel-bg {
   background-color: #ffeed6;
+  margin: 1rem;
   padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
   transition: all 1s;
 }
 
+.prdct-name {
+  color: #ffeed6;
+  background-color: #d35400;
+}
+
 .vid {
   width: 100%;
-  height: 800px;
+  height: 0;
+  padding-top: 56.25%;
   position: relative;
 }
 
@@ -59,14 +72,20 @@ button:hover {
 
 .ubi-map {
   background-color: #ffeed6;
-  padding: 3rem;
+  margin: 1rem;
+  background-color: #ffeed6;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .prdct-img {
-  width: 70%;
+  width: 100%;
+  padding: 1rem;
 }
 
 .prdcts {
+  margin: 1rem;
   background-color: #ffeed6;
   padding: 2rem;
   border-radius: 10px;
@@ -75,6 +94,8 @@ button:hover {
 
 .us-form {
   background-color: #ffeed6;
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -92,8 +113,21 @@ button:hover {
   border-radius: 3px;
 }
 
+.form-inputs {
+  margin: 1rem;
+}
+
 .descrp {
+  background-color: #f39c12;
   color: #6e2c00;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ubi-descrp {
+  display: flex;
+  background-color: #f39c12;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -102,6 +136,23 @@ button:hover {
 .footer-burger {
   background-color: #6e2c00;
   color: #f5cba7;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  padding: 10px;
+}
+
+.btn-buy {
+  background-color: #f39c12;
+  border-color: none;
+  margin: 1rem;
+}
+
+.btn-buy:hover {
+  background-color: #d35400;
 }
 
 /*# sourceMappingURL=style.css.map */
